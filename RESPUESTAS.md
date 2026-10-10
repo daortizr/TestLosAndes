@@ -1,7 +1,7 @@
 # Respuestas — VTEX IO Challenge
 
-**Nombre:**
-**Tiempo aproximado invertido:**
+**Nombre:David Alexander Ortiz**
+**Tiempo aproximado invertido: 3 horas**
 
 > Para cada tarea, explica brevemente qué cambiaste y por qué. Si no alcanzaste a implementar alguna, describe cómo la resolverías.
 
