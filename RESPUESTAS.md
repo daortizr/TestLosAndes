@@ -59,7 +59,7 @@ Linea 1-28. Se crea cache en memoria "estimatesCache" (LRUCache de @vtex/api, ma
 
 Fallback. Si el servicio falla se devuelve la ultima entrada cacheada aunque este vencida y, si no existe, un arreglo vacio, que el front ya maneja sin renderizar el badge.
 
-Estrategia de caching
+Manejo de cache
 - Se guarda en cache la lista de estimaciones ya mapeada ("ShippingEstimate[]"), solo cuando el servicio responde con exito. No se cachean errores ni el arreglo vacio del fallback.
 - Clave: "productId:postalCode". La cotizacion depende solo de esos dos valores y no de datos del usuario, por lo que se puede compartir entre compradores.
 - Se maneja 10 minutos como TTL de entry reciente (evita una llamada externa por cada render de la PDP). El entry se conserva 1 hora para usarla solo como fallback si el servicio falla.
