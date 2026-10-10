@@ -4,7 +4,7 @@
   // que el builder "store" compile. Encuéntralo y corrígelo.
   "shipping-estimate-badge#pdp": {
     "props": {
-      "showCarrierName": true
+      "showCarrierName": true,
       "blockClass": "pdp"
     }
   }

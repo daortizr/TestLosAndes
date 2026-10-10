@@ -28,6 +28,11 @@ export class ShippingMockClient extends ExternalClient {
     return this.http.get<ShippingQuote[]>('/api/quotes', {
       params: { productId, postalCode },
       metric: 'shipping-mock-get-quotes',
+      // Cambio #9: timeout corto y sin reintentos para que la PDP no quede
+      // esperando (el default global es 10 s con 2 reintentos). La caché y el
+      // fallback del resolver cubren las fallas transitorias.
+      timeout: 2000,
+      retries: 0,
     })
   }
 

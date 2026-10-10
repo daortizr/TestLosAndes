@@ -4,4 +4,7 @@
   // TODO #2: falta la interface del bloque "shipping-estimate-badge".
   // Sin ella, la store no puede resolver el bloque usado en blocks.jsonc.
   // Debe apuntar al componente React correcto (ver carpeta react/).
+  "shipping-estimate-badge": {
+    "component": "ShippingEstimateBadge"
+  }
 }
